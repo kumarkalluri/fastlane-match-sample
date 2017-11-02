@@ -1,0 +1,148 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf820
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red159\green160\blue28;
+\red46\green174\blue187;\red47\green180\blue29;\red180\green36\blue25;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c68468\c68012\c14208;
+\cssrgb\c20196\c73240\c78250;\cssrgb\c20238\c73898\c14947;\cssrgb\c76409\c21698\c12524;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19560\viewh13060\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 Dhakers-MacBook-Pro:~ kumar$ fastlane match development\
+[23:04:15]: \cf4 fastlane detected a Gemfile in the current directory\cf2 \
+[23:04:15]: \cf4 however it seems like you don't use `bundle exec`\cf2 \
+[23:04:15]: \cf4 to launch fastlane faster, please use\cf2 \
+[23:04:15]: \
+[23:04:15]: \cf5 $ bundle exec fastlane match development\cf2 \
+[23:04:15]: \
+[23:04:15]: \cf4 Get started using a Gemfile for fastlane https://docs.fastlane.tools/getting-started/ios/setup/#use-a-gemfile\cf2 \
+\
++-----------------------+----------------+\
+|        \cf6 Summary for match 2.62.1\cf2         |\
++-----------------------+----------------+\
+| type                  | development    |\
+| git_branch            | master         |\
+| keychain_name         | login.keychain |\
+| readonly              | false          |\
+| verbose               | false          |\
+| force                 | false          |\
+| skip_confirmation     | false          |\
+| shallow_clone         | false          |\
+| clone_branch_directly | false          |\
+| force_for_new_devices | false          |\
+| skip_docs             | false          |\
+| platform              | ios            |\
++-----------------------+----------------+\
+\
+[23:04:17]: \cf4 To not be asked about this value, you can specify it using 'git_url'\cf2 \
+[23:04:17]: \cf4 URL to the git repo containing all the certificates: \cf2 https://github.com/xyz/xyz-sample.git\
+[23:04:26]: Cloning remote git repo...\
+[23:04:26]: If cloning the repo takes too long, you can use the `clone_branch_directly` option in match.\
+[23:04:32]: 
+\f1 \cf6 \uc0\u55357 \u56595 
+\f0   Successfully decrypted certificates repo\cf2 \
+[23:04:32]: \cf4 To not be asked about this value, you can specify it using 'username'\cf2 \
+[23:04:32]: \cf4 Your Apple ID Username: \cf2 abc@xyz.com\
+[23:04:43]: Verifying that the certificate and profile are still valid on the Dev Portal...\
+Multiple teams found on the Developer Portal, please enter the number of the team you want to use: \
+1) ABCDEFZF \'93ABC\'94 (Company/Organization)\
+2) BBB65ddd \'93ABC LLC" (Company/Organization)\
+2\
+[23:05:37]: \cf4 To not be asked about this value, you can specify it using 'app_identifier'\cf2 \
+[23:05:37]: \cf4 The bundle identifier(s) of your app (comma-separated): \cf2 com.abc.xyz\
+[23:05:55]: \cf4 Couldn't find a valid code signing identity in the git repo for development... creating one for you now\cf2 \
+\
++---------------+--------------------------------------+\
+|               \cf6 Summary for cert 2.62.1\cf2                 |\
++---------------+--------------------------------------+\
+| development   | true                                 |\
+| force         | true                                 |\
+| username      | abc@xyz.com            |\
+| keychain_path | /Users/kumar/Library/Keychains/logi  |\
+|               | n.keychain-db                        |\
+| platform      | ios                                  |\
++---------------+--------------------------------------+\
+\
+[23:05:55]: Starting login with user \'91abc@xyz.com'\
+Multiple teams found on the Developer Portal, please enter the number of the team you want to use: \
+1) TTZYH87XY5 \'93ABC\'94 (Company/Organization)\
+2) 6X82G43549 \'93ABC LLC" (Company/Organization)\
+2\
+[23:06:49]: Successfully logged in\
+[23:07:11]: \cf6 Successfully generated 8D8R77JSJH which was imported to the local machine.\cf2 \
+[23:07:12]: Verifying the certificate is properly installed locally...\
+[23:07:12]: \cf6 Successfully installed certificate 8D8R77JSJH\cf2 \
+\
++-------------------------------------+-----------------------------+\
+|                      \cf6 Summary for sigh 2.62.1\cf2                       |\
++-------------------------------------+-----------------------------+\
+| app_identifier                      | com.abc.xyz |\
+| username                            | abc@xyz.com   |\
+| force                               | true                        |\
+| cert_id                             | 8D8R77JSJH                  |\
+| provisioning_name                   | match Development           |\
+|                                     | com.abc.xyz |\
+| ignore_profiles_with_different_name | true                        |\
+| platform                            | ios                         |\
+| development                         | true                        |\
+| adhoc                               | false                       |\
+| skip_install                        | false                       |\
+| skip_fetch_profiles                 | false                       |\
+| skip_certificate_verification       | false                       |\
++-------------------------------------+-----------------------------+\
+\
+[23:07:17]: Starting login with user \'91abc@xyz.com'\
+Multiple teams found on the Developer Portal, please enter the number of the team you want to use: \
+1) ABDDDED \'93ABC\'94 (Company/Organization)\
+2) 6XYZASFF \'93ABC LLC" (Company/Organization)\
+2\
+[23:08:03]: Successfully logged in\
+[23:08:03]: Fetching profiles...\
+[23:08:08]: Verifying certificates...\
+[23:08:11]: \cf4 No existing profiles found, that match the certificates you have installed locally! Creating a new provisioning profile for you\cf2 \
+[23:08:34]: \cf7 The name 'match Development com.abc.xyz\'92 is already taken, using another one.\cf2 \
+[23:08:34]: \cf4 Creating new provisioning profile for 'com.abc.xyz\'92 with name 'match Development com.abc.xyz 1509557914' for 'ios' platform\cf2 \
+[23:09:03]: \cf4 Downloading provisioning profile...\cf2 \
+[23:09:22]: \cf6 Successfully downloaded provisioning profile...\cf2 \
+[23:09:22]: Installing provisioning profile...\
+\cf6 /var/folders/rz/d6k9df8d1qs2j_x0wx462b1h0000gr/T/d20171101-13102-14nfw5q/profiles/development/Development_com.abc.xyz.mobileprovision\cf2 \
+[23:09:22]: Installing provisioning profile...\
+[23:09:30]: 
+\f1 \cf6 \uc0\u55357 \u56594 
+\f0   Successfully encrypted certificates repo\cf2 \
+[23:09:30]: Pushing changes to remote git repo...\
+git: 'credential-foo' is not a git command. See 'git --help'.\
+fatal: could not read Username for 'https://github.com': terminal prompts disabled\
+[23:09:36]: \cf7 Exit status: 128\cf2 \
+[23:09:36]: \cf7 Couldn't commit or push changes back to git...\cf2 \
+[23:09:36]: \cf7 Exit status: 128\cf2 \
+\
++---------------------+------------------------+------------------------+\
+|                    \cf6 Installed Provisioning Profile\cf2                      |\
++---------------------+------------------------+------------------------+\
+| Parameter           | Environment Variable   | Value                  |\
++---------------------+------------------------+------------------------+\
+| App Identifier      |                        | com.abc.xyz            |\
+|                     |                        |                        |\
+| Type                |                        | development            |\
+| Platform            |                        | ios                    |\
+| Profile UUID        | sigh_com.abc           | 1fe36d36-c9ba-44fa-af  |\
+|                     | .xyz_developme         | 7a-105e26f921ac        |\
+|                     | nt                     |                        |\
+| Profile Name        | sigh_com.abc.          | match Development      |\
+|                     | .xyz_developme         | com.abc.xyz            |\
+|                     | nt_profile-name        | makers 1509557914      |\
+| Profile Path        | sigh_com.abc.          | /Users/kumar/Library/  |\
+|                     | .xyz_developme         | MobileDevice/Provisio  |\
+|                     | nt_profile-path        | ning                   |\
+|                     |                        | Profiles/1fe36d36-c9b  |\
+|                     |                        | a-44fa-af7a-105e26f92  |\
+|                     |                        | 1ac.mobileprovision    |\
+| Development Team ID | sigh_com.abc.          | 6X824567               |\
+|                     | .xyz._developme        |                        |\
+|                     | nt_team-id             |                        |\
++---------------------+------------------------+------------------------+\
+\
+[23:09:36]: \cf6 All required keys, certificates and provisioning profiles are installed 
+\f1 \uc0\u55357 \u56908 
+\f0 \cf2 \
+}
